@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+
+					<img src="img/wc.png" alt="Wordcloud" style="height: 360px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					<h3>CLUSTERIZAÇÃO DE TWEETS – O COVID NA REDE SOCIAL</h3>
+					<p>
+						<small>Autor: <a href="https://www.linkedin.com/in/paulo-medeiros-89226b24/">Paulo Roberto Garcia Medeiros</a></small>
+					</p>
+
+				</section>
+				
+				<section>
+					<h2>Tópicos:</h2>
+					<ol>
+						<li>Proposta</li>
+						<li>Arquitetura do Projeto</li>
+						<li>Resultados Obtidos</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Proposta:</h2>
+					<ol>
+						<li>Por que Covid ?</li>
+						<li>Por que Twitter ?</li>
+						<li>Desafios</li>
+					</ol>
+				
+				</section>
+
+				<section>
+					<h2>Arquitetura do Projeto</h2>				
+					<img src="img/arquitetura.png" alt="Arquitetura" style="height: 480px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h2>Resultados Obtidos:</h2>
+					<section>
+						<br>
+						<h4>Nuvem de Palavras</h4>
+						<img src="img/wc.png" alt="Wordcloud" style="height: 480px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</section>
+
+					<section>
+						<br>
+						<h4>Palavras mais Frequentes por Cluster</h4>
+						<img src="img/clusterizacao.png" alt="Wordcloud" style="height: 480px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</section>
+	
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
